@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+
+  "globals": {
+    "gapi": false,
+    "google": false
+  },
+
+  "rules": {
+    "import/no-unresolved": 0,
+    "no-use-before-define": 0,
+    "no-debugger": 1,
+    "no-restricted-syntax": 1,
+    "no-unused-vars": 1,
+    "no-trailing-spaces": ["error", {
+      "skipBlankLines": true
+    }],
+    "no-shadow": "warn",
+  }
+}

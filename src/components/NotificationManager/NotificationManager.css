@@ -1,0 +1,10 @@
+.notification-container {
+  position: absolute;
+  bottom: 60px;
+  left: 320px;
+  right: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

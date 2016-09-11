@@ -1,0 +1,69 @@
+@keyframes slide-in-out {
+  0% {
+    opacity: 0;
+    transform: scale(.9) translateY(100%);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.9) translateY(100%);
+  }
+}
+
+.notification {
+  display: flex;
+  background: #00a246;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .5);
+  opacity: 0;
+  transform: translateY(100%);
+  width: 100%;
+}
+
+.notification--animate {
+  animation-direction: normal;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: slide-in-out;
+}
+
+.notification__inner {
+  display: flex;
+  background: #005c46;
+  border-radius: 5px;
+  color: #ffffff;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.notification__title,
+.notification__subtitle,
+.notification__message {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.notification__title {
+  font-size: 24px;
+}
+
+.notification__subtitle {
+  font-size: 20px;
+}
+
+.notification__message {
+  font-size: 16px;
+  margin: 0;
+}
